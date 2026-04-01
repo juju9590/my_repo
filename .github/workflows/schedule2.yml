@@ -1,0 +1,12 @@
+name: My Custom Schedule          # <--- 이 이름이 깃허브 화면에 뜹니다!
+on:
+  schedule:
+    - cron: '*/5 * * * *'        # 5분마다 실행 (별 5개 확인 필수!)
+  workflow_dispatch:              # 수동으로도 실행해볼 수 있게 버튼 추가
+
+jobs:
+  check-time:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Current Time
+        run: date                 # 현재 시간을 출력하는 명령어
