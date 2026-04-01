@@ -1,12 +1,12 @@
 name: Manual
 on:
-  workflow_dispatch:                 # 수동으로 워크플로우 실행 (GitHub UI에서 트리거)
+  workflow_dispatch:                        # 수동으로 워크플로우 실행 (GitHub UI에서 트리거)
      inputs:
-        greeting:                    # 입력 파라미터명
+        greeting:                           # 입력 파라미터명
           type: string
-          description: A cheerful word   # 입력 설명
-          required: true  # 필수 입력값 설정
-          default: 'World!'          # 기본값 설정
+          description: A cheerful word      # 입력 설명
+          required: true                    # 필수 입력값 설정
+          default: 'World!'                 # 기본값 설정
 
 jobs:
     run:

@@ -1,0 +1,9 @@
+name: schedule
+on:
+  schedule:
+    - cron: '*/3 * * *'  # 매 3분마다 실행 (cron 표현식)
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date  # 매 3분마다 현재 날짜와 시간 출력 (쉘 명령 실행)
